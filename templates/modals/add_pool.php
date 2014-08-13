@@ -22,6 +22,7 @@
                  <option value="btcguild">BTC Guild</option>
                  <option value="eclipse">Eclipse</option>
                  <option value="eligius">Eligius</option>
+                 <option value="givemecoins">Give Me Coins</option>
                  <option value="magicpool">MagicPool</option>
                  <option value="mpos">MPOS</option>
                  <option value="multipoolus">Multipool.us</option>
@@ -38,7 +39,7 @@
                <input type="text" class="form-control" id="inputPoolURL" name="url" placeholder="http://vertsquad.com/">
              </div>
            </div>
-           <div class="form-group mpos btcguild simplecoin eclipse trademybit multipoolus" style="display: none;">
+           <div class="form-group mpos btcguild simplecoin eclipse trademybit multipoolus givemecoins" style="display: none;">
              <label for="inputPoolAPI" class="col-sm-3 control-label">API Key</label>
              <div class="col-sm-7">
                <input type="text" class="form-control" id="inputPoolAPI" name="api">
@@ -62,6 +63,22 @@
                <input type="text" class="form-control" id="inputCoin" name="coin" placeholder="megacoin">
              </div>
            </div>
+           <div class="form-group givemecoins" style="display: none;" >
+           <label for="inputCoinType" class="col-sm-3 control-label">Coin Type</label>
+            <div class="col-sm-7">
+             <select class="form-control" id="selectCoinType" name="coinType">
+                 <option disabled selected>Select A Coin</option>
+                 <option value="ltc">LTC</option>
+                 <option value="ultc">uLTC</option>
+                 <option value="ftc">FTC</option>
+                 <option value="ptc">PTC</option>
+                 <option value="vtc">VTC</option>
+                 <option value="mon">MON</option>
+                 <option value="plx">PLX</option>
+                 <option value="ppc">PPC</option>
+              </select>
+             </div>
+            </div>
            <div class="form-group">
              <div class="col-sm-12">
                  <span class="error"></span>
