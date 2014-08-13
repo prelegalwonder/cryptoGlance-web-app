@@ -17,34 +17,8 @@ class Pools_Givemecoins extends Pools_Abstract {
     }
 
     public function update() {
-        switch ($coinType) {
-            case "LTC":
-                $apiURI ="/pool/api-ltc"; 
-                break;
-            case "uLTC":
-                $apiURI ="/pool/api-ultc"; 
-                break;
-            case "FTC":
-                $apiURI ="/pool/api-ftc"; 
-                break;
-            case "PTC":
-                $apiURI ="/pool/api-ptc"; 
-                break;
-            case "VTC":
-                $apiURI ="/pool/api-vtc"; 
-                break;
-            case "MON":
-                $apiURI ="/pool/api-mon"; 
-                break;
-            case "PLX":
-                $apiURI ="/pool/api-plx"; 
-                break;
-            case "PPC":
-                $apiURI ="/pool/api-ppc"; 
-                break;
-        }
-
-        if ($CACHED == false || $this->_fileHandler->lastTimeModified() >= 60) { // updates every minute
+        $apiUri = "/pool/api-" . strtolower($this->_coinType);
+        if ($GLOBALS['cached'] == false || $this->_fileHandler->lastTimeModified() >= 60) { // updates every minute
             $userCurl = curl_init($this->_apiURL  . $this->_apiUri . '?api_key='. $this->_apiKey);
             $poolCurl = curl_init($this->_apiURL  . $this->_apiUri);
             

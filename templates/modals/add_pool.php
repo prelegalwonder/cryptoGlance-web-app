@@ -68,12 +68,12 @@
             <div class="col-sm-7">
              <select class="form-control" id="selectCoinType" name="coinType">
                  <option disabled selected>Select A Coin</option>
-                 <option value="ltc">LTC</option>
-                 <option value="ultc">uLTC</option>
-                 <option value="ftc">FTC</option>
-                 <option value="ptc">PTC</option>
-                 <option value="vtc">VTC</option>
-                 <option value="mon">MON</option>
+                 <option class="form-group givemecoins" value="ltc">LTC</option>
+                 <option class="form-group givemecoins" value="ultc">uLTC</option>
+                 <option class="form-group givemecoins" value="ftc">FTC</option>
+                 <option class="form-group givemecoins" value="ptc">PTC</option>
+                 <option class="form-group givemecoins" value="vtc">VTC</option>
+                 <option class="form-group givemecoins" value="mon">MON</option>
                  <option value="plx">PLX</option>
                  <option value="ppc">PPC</option>
               </select>
